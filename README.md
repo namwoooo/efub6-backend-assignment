@@ -7,4 +7,5 @@
 
 
 #### ERD 
-![ERD](https://github.com/user-attachments/assets/62920281-711c-417b-8225-136a8bb294b8)
+<img width="2350" height="1032" alt="efub6_seminar3" src="https://github.com/user-attachments/assets/34edc4b8-88b9-451b-aab3-335b3671c7d9" />
+
