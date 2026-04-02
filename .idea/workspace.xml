@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e99704bc-252a-4eea-a86f-ef64c75b336d" name="변경" comment="feat: member 도메인 및 request dto 생성">
-      <change afterPath="$PROJECT_DIR$/community/src/main/java/efub/assignment/community/member/dto/response/CreateMemberResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/community/src/main/java/efub/assignment/community/member/dto/response/ErrorResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/community/src/main/java/efub/assignment/community/member/dto/response/MemberResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e99704bc-252a-4eea-a86f-ef64c75b336d" name="변경" comment="feat: member repository 생성">
+      <change afterPath="$PROJECT_DIR$/community/src/main/java/efub/assignment/community/member/service/MembersService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +51,9 @@
     &quot;accountId&quot;: &quot;c2108f87-f168-45d7-bc3d-36d1f048dfeb&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -123,7 +123,7 @@
       <workItem from="1775052035654" duration="884000" />
       <workItem from="1775053024259" duration="2966000" />
       <workItem from="1775109978056" duration="599000" />
-      <workItem from="1775113103176" duration="3814000" />
+      <workItem from="1775113103176" duration="5114000" />
     </task>
     <task id="LOCAL-00001" summary="init: 스프링 부트 프로젝트 초기 설정">
       <option name="closed" value="true" />
@@ -157,7 +157,23 @@
       <option name="project" value="LOCAL" />
       <updated>1775116308205</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: response dto 생성">
+      <option name="closed" value="true" />
+      <created>1775116982826</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1775116982826</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: member repository 생성">
+      <option name="closed" value="true" />
+      <created>1775117181913</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1775117181913</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +184,8 @@
     <MESSAGE value="프로젝트 삭제" />
     <MESSAGE value="init: 프로젝트 초기 설정" />
     <MESSAGE value="feat: member 도메인 및 request dto 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: member 도메인 및 request dto 생성" />
+    <MESSAGE value="feat: response dto 생성" />
+    <MESSAGE value="feat: member repository 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: member repository 생성" />
   </component>
 </project>
