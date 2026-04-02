@@ -9,15 +9,15 @@ import lombok.Getter;
 
 @Builder @Getter
 @AllArgsConstructor
-public class CreateMemberResponseDto {
+public class GetMemberResponseDto {
     private Long id;
     private String email;
     private String nickname;
     private String university;
     private String studentId;
 
-    public static CreateMemberResponseDto from(Member member) {
-        return CreateMemberResponseDto.builder()
+    public static GetMemberResponseDto from(Member member) {
+        return GetMemberResponseDto.builder()
                 .id(member.getMemberId())
                 .email(member.getEmail())
                 .nickname(member.getNickname())

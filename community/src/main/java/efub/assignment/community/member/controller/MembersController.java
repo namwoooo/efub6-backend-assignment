@@ -2,7 +2,7 @@ package efub.assignment.community.member.controller;
 
 import efub.assignment.community.member.dto.request.CreateMemberRequestDto;
 import efub.assignment.community.member.dto.request.ProfileUpdateRequestDto;
-import efub.assignment.community.member.dto.response.CreateMemberResponseDto;
+import efub.assignment.community.member.dto.response.GetMemberResponseDto;
 import efub.assignment.community.member.dto.response.MemberResponseDto;
 import efub.assignment.community.member.service.MembersService;
 import lombok.RequiredArgsConstructor;
@@ -22,15 +22,15 @@ public class MembersController {
 
     // 회원 조회: GET /members/{memberId}
     @GetMapping("/{memberId}")
-    public ResponseEntity<MemberResponseDto> getMember(@PathVariable("memberId") Long memberId) {
-        MemberResponseDto responseDto = membersService.getMember(memberId);
+    public ResponseEntity<GetMemberResponseDto> getMember(@PathVariable("memberId") Long memberId) {
+        GetMemberResponseDto responseDto = membersService.getMember(memberId);
         return ResponseEntity.ok(responseDto);
     }
 
     // 회원 가입: POST /members
     @PostMapping
-    public ResponseEntity<CreateMemberResponseDto> createMember(@RequestBody CreateMemberRequestDto requestDto) {
-        CreateMemberResponseDto responseDto = membersService.createMember(requestDto);
+    public ResponseEntity<MemberResponseDto> createMember(@RequestBody CreateMemberRequestDto requestDto) {
+        MemberResponseDto responseDto = membersService.createMember(requestDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(responseDto);
     }
 

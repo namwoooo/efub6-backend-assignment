@@ -2,7 +2,7 @@ package efub.assignment.community.member.service;
 
 import efub.assignment.community.member.dto.request.CreateMemberRequestDto;
 import efub.assignment.community.member.dto.request.ProfileUpdateRequestDto;
-import efub.assignment.community.member.dto.response.CreateMemberResponseDto;
+import efub.assignment.community.member.dto.response.GetMemberResponseDto;
 import efub.assignment.community.member.dto.response.MemberResponseDto;
 import efub.assignment.community.member.domain.Member;
 import efub.assignment.community.member.repository.MemberRepository;
@@ -18,21 +18,21 @@ public class MembersService {
     private final MemberRepository memberRepository;
 
     // 회원 조회
-    public MemberResponseDto getMember(Long memberId) {
+    public GetMemberResponseDto getMember(Long memberId) {
         Member member = memberRepository.findByMemberId(memberId)
                 .orElseThrow(() -> new IllegalArgumentException("해당 회원을 찾을 수 없습니다."));
-        return MemberResponseDto.from(member);
+        return GetMemberResponseDto.from(member);
     }
 
     // 회원 가입
     @Transactional
-    public CreateMemberResponseDto createMember(CreateMemberRequestDto requestDto) {
+    public MemberResponseDto createMember(CreateMemberRequestDto requestDto) {
         if (memberRepository.existsByEmail(requestDto.getEmail())) {
             throw new IllegalArgumentException("이미 존재하는 email 입니다." + requestDto.getEmail());
         }
         Member member = requestDto.toEntity();
         Member savedMember = memberRepository.save(member);
-        return CreateMemberResponseDto.from(savedMember);
+        return MemberResponseDto.from(savedMember);
     }
 
     // 회원 프로필 수정
