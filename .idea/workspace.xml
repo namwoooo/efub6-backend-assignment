@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e99704bc-252a-4eea-a86f-ef64c75b336d" name="변경" comment="feat: member repository 생성">
-      <change afterPath="$PROJECT_DIR$/community/src/main/java/efub/assignment/community/member/service/MembersService.java" afterDir="false" />
+    <list default="true" id="e99704bc-252a-4eea-a86f-ef64c75b336d" name="변경" comment="feat: member service 생성">
+      <change afterPath="$PROJECT_DIR$/community/src/main/java/efub/assignment/community/member/controller/MembersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/community.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/community.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,25 +64,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.community 빌드.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CommunityApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.community 빌드.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.CommunityApplication (1).executor": "Run",
+    "Spring Boot.CommunityApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\smkpd\OneDrive\바탕 화면\과제\EFUB6기_2026\efub6-backend-assignment\community\src\test\java\efub\assignment" />
@@ -89,17 +97,10 @@
       <recent name="C:\Users\smkpd\OneDrive\바탕 화면\과제\EFUB6기_2026\efub6-backend-assignment\community" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CommunityApplication (1)">
+  <component name="RunManager">
     <configuration name="CommunityApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="community.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="efub.assignment.community.CommunityApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommunityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="community.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.community.CommunityApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,7 +124,7 @@
       <workItem from="1775052035654" duration="884000" />
       <workItem from="1775053024259" duration="2966000" />
       <workItem from="1775109978056" duration="599000" />
-      <workItem from="1775113103176" duration="5114000" />
+      <workItem from="1775113103176" duration="8097000" />
     </task>
     <task id="LOCAL-00001" summary="init: 스프링 부트 프로젝트 초기 설정">
       <option name="closed" value="true" />
@@ -173,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775117181913</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: member service 생성">
+      <option name="closed" value="true" />
+      <created>1775118329206</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1775118329207</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +195,7 @@
     <MESSAGE value="feat: member 도메인 및 request dto 생성" />
     <MESSAGE value="feat: response dto 생성" />
     <MESSAGE value="feat: member repository 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: member repository 생성" />
+    <MESSAGE value="feat: member service 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: member service 생성" />
   </component>
 </project>
